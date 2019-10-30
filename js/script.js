@@ -41,9 +41,13 @@ $(document).ready(function () {
 
   $("#title text").hover(function(){
     $("#title text").css("opacity",0.15);
+    $("#title text").css("font-size",9);
     $(this).css("opacity",1);
+    $(this).css("font-size",15);
+    $(this).css("text-align",RIGHT);
   },function(){
     $("#title text").css("opacity",0.15);
+    $("#title text").css("font-size",9);
   });
 
 
