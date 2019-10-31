@@ -26,10 +26,11 @@ $(document).ready(function () {
   //.hover(callback,callback);
   $("#curve g").hover(function() {
     // console.log("Hover!");
-
-    $("#curve g").css("opacity",0.3);
+      $("#curve text").css("opacity",1);
+    $("#curve g").css("opacity",0.15);
     $(this).css("opacity",1);
   },function(){
+    $("#curve text").css("opacity",0.15);
     $("#curve g").css("opacity",1);
   });
 
@@ -39,16 +40,16 @@ $(document).ready(function () {
   //   $("#title").toggle();
   // }
 
-  $("#title text").hover(function(){
-    $("#title text").css("opacity",0.15);
-    $("#title text").css("font-size",9);
-    $(this).css("opacity",1);
-    $(this).css("font-size",15);
-    $(this).css("text-align",RIGHT);
-  },function(){
-    $("#title text").css("opacity",0.15);
-    $("#title text").css("font-size",9);
-  });
+  // $("#title text").hover(function(){
+  //   $("#title text").css("opacity",0.15);
+  //   $("#title text").css("font-size",9);
+  //   $(this).css("opacity",1);
+  //   $(this).css("font-size",15);
+  //   $(this).css("text-align",RIGHT);
+  // },function(){
+  //   $("#title text").css("opacity",0.15);
+  //   $("#title text").css("font-size",9);
+  // });
 
 
 
